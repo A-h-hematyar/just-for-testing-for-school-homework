@@ -1,0 +1,118 @@
+/* style.css */
+@import url('https://fonts.googleapis.com/css2?family=Vazirmatn:wght@400;600&display=swap');
+
+:root {
+    --bg1: #f1f0f7;
+    --bg2: #006affad;
+    --card: #fff;
+    --accent: #3b82f6;
+    --accent-dark: #2563eb;
+    --muted: #6b7280
+}
+
+* {
+    box-sizing: border-box
+}
+
+html,
+body {
+    height: 100%
+}
+
+body {
+    margin: 0;
+    font-family: 'Vazirmatn';
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+    background:var(--bg1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 24px
+}
+
+.card {
+    width: 100%;
+    max-width: 480px;
+    background: var(--card);
+    border-radius: 14px;
+    padding: 28px;
+    box-shadow: 0 12px 30px rgba(2, 6, 23, 0.08);
+    direction: rtl
+}
+
+h1 {
+    margin: 0 0 18px 0;
+    font-size: 20px;
+    color: #111;
+    text-align: center
+}
+
+.field {
+    margin-bottom: 14px
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    color: #111;
+    font-weight: 600
+}
+
+input,
+select {
+    width: 100%;
+    padding: 11px 12px;
+    border: 1px solid #e6e9ef;
+    border-radius: 10px;
+    font-size: 15px;
+    background: transparent
+}
+
+input:focus,
+select:focus {
+    outline: none;
+    border-color: var(--accent);
+    box-shadow: 0 8px 20px rgba(59, 130, 246, 0.08)
+}
+
+.row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 12px
+}
+
+.submit {
+    margin-top: 16px;
+    background: var(--accent);
+    color: #ffffff;
+    font-family: 'Vazirmatn';
+    border: none;
+    padding: 12px;
+    border-radius: 10px;
+    font-size: 15px;
+    font-weight: 700;
+    cursor: pointer
+}
+
+.submit:hover {
+    background: var(--accent-dark)
+}
+
+.su{
+    align-items: center;
+}
+
+.hint {
+    font-size: 13px;
+    color: var(--muted);
+    text-align: center;
+    margin-top: 12px
+}
+
+
+@media (max-width:520px) {
+    .row {
+        grid-template-columns: 1fr
+    }
+}

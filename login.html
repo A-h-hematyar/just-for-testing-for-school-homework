@@ -1,0 +1,65 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>فرم ورود دانش‌آموز</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <main class="card" role="main" aria-labelledby="title">
+        <h1 id="title">فرم ورود — اطلاعات دانش‌آموز</h1>
+
+        <form action="#" method="get" novalidate>
+            <div class="field">
+                <label for="fullname">نام و نام خانوادگی</label>
+                <input type="text" id="fullname" name="fullname" placeholder="مثلاً: علی رضایی" required minlength="2" />
+            </div>
+
+            <div class="field">
+                <label for="phone">شماره تلفن</label>
+                <input type="tel" id="phone" name="phone" placeholder="09123456789" pattern="09[0-9]{9}"
+                    required />
+            </div>
+            <div class="field">
+                    <label for="grade">رشته</label>
+                    <select id="grade" name="grade" required>
+                        <option value="">انتخاب رشته...</option>
+                        <option value="10">کامپیوتر</option>
+                        <option value="11">مکاترونیک</option>
+                        <option value="12">الکترونیک</option>
+                        <option value="12">صنایع چوب</option>
+                        <option value="12">صنایع فلز</option>
+                        <option value="12">تاسیسات</option>
+                    </select>
+                </div>
+
+                <div class="field">
+                    <label for="grade">پایه</label>
+                    <select id="grade" name="grade" required>
+                        <option value="">انتخاب پایه...</option>
+                        <option value="10">دهم</option>
+                        <option value="11">یازدهم</option>
+                        <option value="12">دوازدهم</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="field">
+                <label for="national">کد ملی</label>
+                <input type="text" id="national" name="national" placeholder="10 رقم کد ملی" pattern="[0-9]{10}"
+                    required />
+            </div>
+            <div>
+                <input type="submit" class="submit"></div>
+            </div>
+        </form>
+
+        <div class="hint">حقوق <b>pars os</b> محفظ است</div>
+    </main>
+</body>
+
+</html>
